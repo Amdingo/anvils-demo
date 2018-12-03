@@ -141,7 +141,7 @@ then
     let max=18
     while [ $count -le $max ]
     do
-        if ! grep  "Connector@" /var/log/rundeck/service.log
+        if ! grep "Grails application running" /var/log/rundeck/service.log
         then  printf >&2 ".";# progress output.
         else  break; # successful message matched by grep.
         fi
