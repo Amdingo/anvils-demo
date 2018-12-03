@@ -167,7 +167,7 @@ rd projects acls list
 
 # Run a local ad-hoc command for sanity checking.
 echo "Running a adhoc command across the nodes tagged for anvils ..."
-rd adhoc -p $PROJECT --follow --filter 'tags: anvils' -- whoami \&\& echo " -- \${node.description}"
+# rd adhoc -p $PROJECT --follow --filter 'tags: anvils' -- whoami \&\& echo " -- \${node.description}"
 
 # Add jobs, scripts and options
 # -----------------------------
